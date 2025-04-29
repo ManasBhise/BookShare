@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">BookShare</div>
+        <nav class="nav-links">
+            <a href="../index.html" class="nav-link" data-page="home">Home</a>
+            <a href="search.html" class="nav-link" data-page="search">Search</a>
+            <a href="post-book.html" class="nav-link" data-page="post-book">Post a Book</a>
+            <a href="about.html" class="nav-link" data-page="about">About Me</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn btn-secondary nav-link" data-page="login"><a href="login.html" style="text-decoration: none; color: white;">Login</a></button>
+            <button class="btn btn-primary">Sign Up</button>
+        </div>
+    </header>
+    <main id="search-page" class="page active">
+        <h1 class="section-title">Search Books</h1>
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for books, authors, or genres">
+                <button class="btn btn-primary">Search</button>
+            </div>
+            <div class="filters">
+                <div class="filter-item">Fiction</div>
+                <div class="filter-item">Science</div>
+                <div class="filter-item">History</div>
+                <div class="filter-item">Biography</div>
+                <div class="filter-item">Self-Help</div>
+            </div>
+        </div>
+
+        <div class="search-results">
+            <div class="search-filter-sidebar">
+                <h3>Filter Results</h3>
+                <div class="filter-section">
+                    <h3>Distance</h3>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="distance-1">
+                            <label for="distance-1">Less than 1 mile</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="distance-5">
+                            <label for="distance-5">Less than 5 miles</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="distance-10">
+                            <label for="distance-10">Less than 10 miles</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Genre</h3>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="genre-fiction">
+                            <label for="genre-fiction">Fiction</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="genre-nonfiction">
+                            <label for="genre-nonfiction">Non-Fiction</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="genre-scifi">
+                            <label for="genre-scifi">Science Fiction</label>
+                        </div>
+                        <div class="filter-option">
+                               <input type="checkbox" id="genre-mystery">
+                            <label for="genre-mystery">Mystery</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Availability</h3>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="avail-now">
+                            <label for="avail-now">Available Now</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="avail-soon">
+                            <label for="avail-soon">Available Soon</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Results (24 books found)</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <div class="book-img"><img src="../Images/images.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>To Kill a Mockingbird</h3>
+                        <p>Harper Lee</p>
+                        <div class="book-location">
+                            <span>📍</span> 2.5 miles away
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="../Images/1984.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>1984</h3>
+                        <p>George Orwell</p>
+                        <div class="book-location">
+                            <span>📍</span> 1.2 miles away
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="../Images/The Great Gatsby.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>The Great Gatsby</h3>
+                        <p>F. Scott Fitzgerald</p>
+                        <div class="book-location">
+                            <span>📍</span> 3.7 miles away
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="../Images/Pride and Prejuidice.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>Pride and Prejudice</h3>
+                        <p>Jane Austen</p>
+                        <div class="book-location">
+                            <span>📍</span> 0.8 miles away
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="../Images/Dune.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>Dune</h3>
+                        <p>Frank Herbert</p>
+                        <div class="book-location">
+                            <span>📍</span> 4.1 miles away
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="../Images/The Hobbit.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>The Hobbit</h3>
+                        <p>J.R.R. Tolkien</p>
+                        <div class="book-location">
+                            <span>📍</span> 2.3 miles away
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

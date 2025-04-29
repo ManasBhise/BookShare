@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BookShare</div>
+        <nav class="nav-links">
+            <a href="../index.html" class="nav-link" data-page="home">Home</a>
+            <a href="search.html" class="nav-link" data-page="search">Search</a>
+            <a href="post-book.html" class="nav-link" data-page="post-book">Post a Book</a>
+            <a href="about.html" class="nav-link" data-page="about">About Me</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn btn-secondary nav-link" data-page="login"><a href="login.html" style="text-decoration: none; color: white;">Login</a></button>
+            <button class="btn btn-primary">Sign Up</button>
+        </div>
+    </header>
+    <main id="profile-page" class="page active">
+        <div class="profile-header">
+            <div class="profile-avatar"><img src="../Images/Profille Photo.jpeg" alt="" height="120px" width="120px" style="border-radius: 50%;"></div>
+            <div class="profile-info">
+                <h1>Manas Bhise</h1>
+                <div class="profile-meta">
+                    <span>Pune, Maharashtra</span>
+                    <span>+91 9403580826</span>
+                    <span>4 Books Available</span>
+                </div>
+                <div class="profile-bio">
+                    <p>Hi there! I'm a book enthusiast and love sharing my collection with others. I specialize in classic literature and science fiction. Feel free to browse my collection and request a book!</p>
+                </div>
+                <div class="profile-social">
+                    <a href="#">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-books">
+            <h2 class="section-title">Manas Book Collection</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <div class="book-img"><img src="../Images/images.jpg" alt="" height="241px" width="250px"></div>
+                    <div class="book-info">
+                        <h3>To Kill a Mockingbird</h3>
+                        <p>Harper Lee</p>
+                        <p><strong>Status:</strong> Available</p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="../Images/1984.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>1984</h3>
+                        <p>George Orwell</p>
+                        <p><strong>Status:</strong> Available</p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="../Images/Brave New World.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>Brave New World</h3>
+                        <p>Aldous Huxley</p>
+                        <p><strong>Status:</strong> Borrowed</p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="../Images/The Great Gatsby.jpg  " alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>The Great Gatsby</h3>
+                        <p>F. Scott Fitzgerald</p>
+                        <p><strong>Status:</strong> Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

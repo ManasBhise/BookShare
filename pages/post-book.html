@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BookShare</div>
+        <nav class="nav-links">
+            <a href="../index.html" class="nav-link" data-page="home">Home</a>
+            <a href="search.html" class="nav-link" data-page="search">Search</a>
+            <a href="post-book.html" class="nav-link" data-page="post-book">Post a Book</a>
+            <a href="about.html" class="nav-link" data-page="about">About Me</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn btn-secondary nav-link" data-page="login"><a href="login.html" style="text-decoration: none; color: white;">Login</a></button>
+            <button class="btn btn-primary">Sign Up</button>
+        </div>
+    </header>
+    <main id="post-book-page" class="page active">
+        <h1 class="section-title">Post a Book</h1>
+        <div class="form-container">
+            <form id="post-book-form">
+                <div class="form-group">
+                    <label for="book-title">Book Title*</label>
+                    <input type="text" id="book-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="book-author">Author*</label>
+                    <input type="text" id="book-author" required>
+                </div>
+                <div class="form-group">
+                    <label for="book-isbn">ISBN (Optional)</label>
+                    <input type="text" id="book-isbn">
+                </div>
+                <div class="form-group">
+                    <label for="book-genre">Genre*</label>
+                    <select id="book-genre" required>
+                        <option value="">Select a genre</option>
+                        <option value="fiction">Fiction</option>
+                        <option value="non-fiction">Non-Fiction</option>
+                        <option value="sci-fi">Science Fiction</option>
+                        <option value="mystery">Mystery</option>
+                        <option value="romance">Romance</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="biography">Biography</option>
+                        <option value="self-help">Self-Help</option>
+                        <option value="history">History</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="book-condition">Condition*</label>
+                    <select id="book-condition" required>
+                        <option value="">Select condition</option>
+                        <option value="new">Like New</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="worn">Worn</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="book-cover">Book Cover Image (Optional)</label>
+                    <input type="file" id="book-cover" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="book-description">Description (Optional)</label>
+                    <textarea id="book-description" placeholder="Tell others about this book..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="loan-period">Maximum Loan Period*</label>
+                    <select id="loan-period" required>
+                        <option value="">Select loan period</option>
+                        <option value="1-week">1 Week</option>
+                        <option value="2-weeks">2 Weeks</option>
+                        <option value="1-month">1 Month</option>
+                        <option value="2-months">2 Months</option>
+                        <option value="negotiable">Negotiable</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-post">Post Book</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
