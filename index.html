@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BookShare</div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link" data-page="home">Home</a>
+            <a href="pages/search.html" class="nav-link" data-page="search">Search</a>
+            <a href="pages/post-book.html" class="nav-link" data-page="post-book">Post a Book</a>
+            <a href="pages/about.html" class="nav-link" data-page="about">About Me</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn btn-secondary nav-link" data-page="login"><a href="pages/login.html" style="text-decoration: none; color: white;">Login</a></button>
+            <button class="btn btn-primary">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <main id="home-page" class="page active">
+        <section class="hero">
+            <h1>Borrow Books from People Near You</h1>
+            <p>Share your collection and discover new books from your community</p>
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for books, authors, or genres">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+                <div class="filters">
+                    <div class="filter-item">Fiction</div>
+                    <div class="filter-item">Science</div>
+                    <div class="filter-item">History</div>
+                    <div class="filter-item">Biography</div>
+                    <div class="filter-item">Self-Help</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Featured Books Near You</h2>
+            <div class="book-grid">
+                <div class="book-card" id="mockingbird-card">
+                    <div class="book-img"><a href="pages/book-detail.html"><img src="Images/images.jpg" alt="" height="240px" width="200px"></a></div>
+                    <div class="book-info">
+                        <h3>To Kill a Mockingbird</h3>
+                        <p>Harper Lee</p>
+                        <div class="book-location">
+                            <span>📍</span> 2.5 Km away
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="Images/1984.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>1984</h3>
+                        <p>George Orwell</p>
+                        <div class="book-location">
+                            <span>📍</span> 1.2 Km away
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="Images/The Great Gatsby.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>The Great Gatsby</h3>
+                        <p>F. Scott Fitzgerald</p>
+                        <div class="book-location">
+                            <span>📍</span> 3.7 Km away
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="Images/Pride and Prejuidice.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>Pride and Prejudice</h3>
+                        <p>Jane Austen</p>
+                        <div class="book-location">
+                            <span>📍</span> 0.8 Km away
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Recently Added</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <div class="book-img"><img src="Images/Dune.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>Dune</h3>
+                        <p>Frank Herbert</p>
+                        <div class="book-location">
+                            <span>📍</span> 4.1 miles away
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="Images/The Hobbit.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>The Hobbit</h3>
+                        <p>J.R.R. Tolkien</p>
+                        <div class="book-location">
+                            <span>📍</span> 2.3 miles away
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="Images/Harry Potter.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>Harry Potter</h3>
+                        <p>J.K. Rowling</p>
+                        <div class="book-location">
+                            <span>📍</span> 1.5 miles away
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img"><img src="Images/The Alchemist.jpg" alt="" height="240px" width="200px"></div>
+                    <div class="book-info">
+                        <h3>The Alchemist</h3>
+                        <p>Paulo Coelho</p>
+                        <div class="book-location">
+                            <span>📍</span> 3.2 miles away
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Join the Community?</h2>
+            <p>Share your books with others or discover new books near you</p>
+            <div class="cta-buttons">
+                <button class="btn btn-post nav-link" data-page="post-book">Post a Book</button>
+                <button class="btn btn-borrow nav-link" data-page="search">Borrow a Book</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
