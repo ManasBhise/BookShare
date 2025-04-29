@@ -6,14 +6,6 @@
 
 ---
 
-## Live Demo
-
-[Click here to view the live website](https://your-live-demo-link.com)
-
-> *(Replace the above link with your actual hosted link — e.g., GitHub Pages, Netlify, or Vercel)*
-
----
-
 ## Project Description
 
 **BookShare** is a front-end web application designed to promote book lending and sharing within local communities. Users can sign up, log in, list books for borrowing, and browse available books. The platform offers a clean and responsive UI with intuitive navigation using only **HTML**, **CSS**, and **JavaScript**, making it a lightweight and fast web solution.
